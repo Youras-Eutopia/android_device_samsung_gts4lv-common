@@ -108,13 +108,14 @@ debug.sf.high_fps_early_gl_phase_offset_ns=100000
 debug.sf.high_fps_early_phase_offset_ns=100000
 debug.sf.high_fps_late_app_phase_offset_ns=100000
 debug.sf.high_fps_late_sf_phase_offset_ns=100000
-debug.sf.latch_unsignaled=1
+debug.sf.latch_unsignaled=0
 ro.vendor.display.cabl=2
 vendor.display.enable_default_color_mode=1
 vendor.display.disable_dynamic_fps=1
 vendor.display.disable_ext_anim=1
 vendor.display.idle_time=0
 vendor.display.idle_time_inactive=0
+debug.sf.disable_client_composition_cache=1
 
 # fastbootd
 ro.fastbootd.available=true
@@ -166,6 +167,11 @@ vendor.usb.use_ffs_mtp=0
 # WiFi Display
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+
+suspend.short_suspend_backoff_enabled=true
+suspend.short_suspend_threshold_millis=2000
+suspend.max_sleep_time_millis=40000
+
 
 # Zygote
 zygote.critical_window.minute=10
