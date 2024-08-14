@@ -98,7 +98,7 @@ dalvik.vm.heaptargetutilization=0.75
 
 # Display
 debug.gralloc.gfx_ubwc_disable=0
-debug.sf.auto_latch_unsignaled=0
+debug.sf.auto_latch_unsignaled=1
 debug.sf.early_app_phase_offset_ns=100000
 debug.sf.early_phase_offset_ns=100000
 debug.sf.early_gl_app_phase_offset_ns=100000
@@ -116,7 +116,6 @@ vendor.display.disable_dynamic_fps=1
 vendor.display.disable_ext_anim=1
 vendor.display.idle_time=0
 vendor.display.idle_time_inactive=0
-debug.sf.disable_client_composition_cache=1
 
 # fastbootd
 ro.fastbootd.available=true
