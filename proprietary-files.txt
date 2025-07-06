@@ -1,8 +1,5 @@
 # Common proprietary files - from Samsung package version T720XXS3DWA1, unless pinned
 
-# libOmxVpp depends on libOmxCore, which is a GNU makefile target
-# lowi-server depends on libwpa_client, which is a GNU makefile target
-
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
@@ -269,7 +266,7 @@ vendor/lib64/hw/gatekeeper.mdfpp.so
 # GNSS
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
-vendor/bin/lowi-server;DISABLE_CHECKELF
+vendor/bin/lowi-server
 vendor/bin/xtra-daemon
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
@@ -416,29 +413,8 @@ vendor/lib64/libmeters.so
 vendor/lib64/libreffeature.so
 
 # OMX
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAmrDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxG711Dec.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxVpp.so;DISABLE_CHECKELF
-vendor/lib/libOmxWmaDec.so
-vendor/lib/libdsd2pcm.so
+vendor/lib/libOmxVpp.so
 vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
-vendor/lib64/libOmxAacDec.so
-vendor/lib64/libOmxAlacDec.so
-vendor/lib64/libOmxAmrDec.so
-vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxApeDec.so
-vendor/lib64/libOmxEvrcDec.so
-vendor/lib64/libOmxG711Dec.so
-vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libOmxVpp.so;DISABLE_CHECKELF
-vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 
 # Perf
@@ -708,7 +684,7 @@ vendor/etc/init/wifi_qcom.rc
 
 # WiFi Display (system) - from KB2005 14.0.0.602(EX01)
 system/framework/WfdCommon.jar;BOOT_JAR|a661c494d064b79a3f71579592411fada1ea232f
-system_ext/bin/wfdservice|400d123df78c1ed2e9643ff3ddf5ee5748f954fe
+system_ext/bin/wfdservice|400d123df78c1ed2e9643ff3ddf5ee5748f954fe|8a0be1b9478adf4b44a1ba34f045b1871f64ac5c
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|10dcd4e58f0652d800d48ae5b76e4fab43fda214
 system_ext/etc/seccomp_policy/wfdservice.policy|5b3592c965f16b2d55ac89d56d8d3c49a6b5800b
